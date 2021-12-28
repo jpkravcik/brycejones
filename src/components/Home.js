@@ -1,0 +1,25 @@
+import Header from './Header'
+import placeholder from '../assets/placeholder.mp4'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+  } from "react-router-dom";
+
+const Home = () => {
+    return (
+        <div>
+        <Router>
+        <div className='h-screen overflow-hidden flex place-items-start justify-center'>
+        <Header />
+            <video autoPlay loop muted className='z-10 absolute object-fill h-screen w-auto min-w-full max-w-none m-0 p-0'>
+                <source src={placeholder} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        </Router>
+        </div>
+    )
+}
+
+export default Home

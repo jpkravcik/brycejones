@@ -1,12 +1,17 @@
-import logo from './logo.svg';
+import placeholder from './assets/placeholder.mp4'
+import Header from './components/Header'
+import Home from './components/Home'
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1 className="text-3xl font-bold underline">tester h1</h1>
-      </header>
+    <div>
+      <Home />
     </div>
   );
 }
