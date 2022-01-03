@@ -23,7 +23,7 @@ const Slideshow = () => {
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: false,
-        indicators: true,
+        indicators: false,
     };
 
     return (
@@ -32,7 +32,7 @@ const Slideshow = () => {
                 <Slide {...properties}>
                     {images.map((image, index) => 
                         <div key={index}>
-                            <img src={image} className="object-fill" />
+                            <img src={image} className="object-fill animate-fade-in" />
                         </div>
                     )}
                 </Slide>

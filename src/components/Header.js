@@ -10,7 +10,7 @@ const Header = (props) => {
     const classString = classNames("m-4 text-2xl font-Playfair", colorString);
 
     return (
-        <div className="relative z-30 flex content-center items-center justify-center m-0 p-0">
+        <div className="relative z-30 flex content-center items-center justify-center m-0 p-0 bg-opacity-50 w-screen h-40 ">
             <div className="m-5">
                 <Link className ={classString} to="/about">About</Link>
                 <Link className ={classString} to="/portfolio">Portfolio</Link>
