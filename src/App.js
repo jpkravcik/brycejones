@@ -1,5 +1,7 @@
 import Home from './components/Home'
 import Portfolio from './components/Portfolio'
+import Book from './components/Book';
+import Pricing from './components/Pricing';
 import './App.css';
 import {
   BrowserRouter,
@@ -14,7 +16,9 @@ function App() {
       {/* <Home /> */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/book" element={<Book />} />
         </Routes>
     </div>
   );

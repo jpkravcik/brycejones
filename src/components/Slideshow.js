@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Slide } from "react-slideshow-image";
-import { image1, image2, image3, image4, image5, image6,
-    image7, image8, image9, image10, image11 } from '../assets/index';
+import { image1, image2, image3, image4, image5 } from '../assets/index';
 
 const Slideshow = () => {
     const images =[
@@ -9,13 +8,7 @@ const Slideshow = () => {
         image2,
         image3,
         image4,
-        image5,
-        image6,
-        image7,
-        image8,
-        image9,
-        image10,
-        image11
+        image5
     ]
     
     const properties = {
@@ -28,7 +21,7 @@ const Slideshow = () => {
 
     return (
         <div>
-            <div>
+            <div className='mt-20'>
                 <Slide {...properties}>
                     {images.map((image, index) => 
                         <div key={index}>
@@ -37,7 +30,6 @@ const Slideshow = () => {
                     )}
                 </Slide>
             </div>
-            
         </div>
     )
 }
