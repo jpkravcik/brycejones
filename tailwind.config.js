@@ -7,6 +7,10 @@ module.exports = {
         '144': '36rem'
       },
 
+      backgroundImage: {
+        'home-bg': "url('assets/c-680.jpg')",
+      },
+
       keyframes: {
         'fade-in' : {
           '0%' : {

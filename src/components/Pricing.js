@@ -8,65 +8,38 @@ const Pricing = () => {
       };
 
   return (
-    // <div className="flex flex-col bg-white h-screen max-h-full w-full text-black max-w-full">
-    //     <Header textColor="black" />
-    //     <div className='flex flex-col justify-between w-full h-full max-h-full'>
-    //         <div className='flex flex-row justify-center w-full'>
-    //             <div className='bg-black text-white w-5/12 m-8 mr-72 text-center'>
-    //                 <p className='font-Playfair mb-4 mt-4 text-4xl'>Mini Package</p>
-    //                 <p className='font-Playfair mb-4 mt-4 text-2xl'>4 retouched photos, 1 outfit</p>
-    //                 <p className='font-Playfair mb-4 mt-4 text-2xl'>$80</p>
-    //                 <button onClick={handleClick} className='bg-white text-black m-2 mt-1 p-2 w-28 rounded-md'>Book</button>
-    //             </div>
-    //         </div>
-    //         <div className='flex flex-row justify-center w-full'>
-    //             <div className='bg-black text-white w-5/12 m-8 ml-72 text-center'>
-    //                 <p className='font-Playfair mb-4 mt-4 text-4xl'>Value Package</p>
-    //                 <p className='font-Playfair mb-4 mt-4 text-2xl'>10 retouched photos, 2 outfits</p>
-    //                 <p className='font-Playfair mb-4 mt-4 text-2xl'>$180</p>
-    //                 <button onClick={handleClick} className='bg-white text-black m-2 mt-1 p-2 w-28 rounded-md'>Book</button>
-    //             </div>
-    //         </div>
-    //         <div className='flex flex-row justify-center w-full'>
-    //             <div className='bg-black text-white w-5/12 m-8 mr-72 text-center'>
-    //                 <p className='font-Playfair mb-4 mt-4 text-4xl'>Model Package</p>
-    //                 <p className='font-Playfair mb-4 mt-4 text-2xl'>16 retouched photos, 3 outfits, 2 locations</p>
-    //                 <p className='font-Playfair mb-4 mt-4 text-2xl'>$300</p>
-    //                 <button onClick={handleClick} className='bg-white text-black m-2 mt-1 p-2 w-28 rounded-md'>Book</button>
-    //             </div>
-    //         </div>
-    //     </div>
-    // </div>
-
- <div className="flex flex-col bg-white h-screen w-screen text-black overflow-x-hidden">
-<Header textColor="black" />
-<div className='flex flex-col justify-between w-full'>
-    <div className='flex flex-row content-start w-full h-144'>
-        <div className='bg-black text-white w-5/12 m-8 text-center'>
-            <p className='font-Playfair mb-4 mt-4 text-5xl'>Mini Package</p>
-            <p className='font-Playfair mb-4 mt-4 text-3xl'>4 retouched photos, 1 outfit</p>
-            <p className='font-Playfair mb-4 mt-4 text-3xl'>$80</p>
-            <button onClick={handleClick} className='bg-white text-black m-2 mt-1 p-2 w-28 rounded-md'>Book</button>
+    <div className="flex flex-col bg-white h-screen max-h-full w-full text-black max-w-full">
+        <Header textColor="black" />
+        <div className='flex flex-row items-start justify-between w-full h-full max-h-full'>
+            <div className='flex flex-col justify-center w-full h-full'>
+                <div className='text-black m-8 text-center h-full'>
+                    <p className='font-Playfair mb-4 mt-4 text-4xl'>Mini Package</p>
+                    <p className='font-Playfair mb-4 mt-4 text-2xl'>4 retouched photos, 1 outfit</p>
+                    <p className='font-Playfair mb-4 mt-4 text-2xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper arcu mi, vitae luctus nisl porttitor at. Sed fringilla leo id pharetra malesuada. In varius, ex et volutpat euismod, nisi turpis porttitor magna, sed condimentum lorem justo nec nisi. Sed lobortis augue et pretium efficitur. Etiam ac magna vel elit lobortis faucibus. Nunc vestibulum neque at augue bibendum, quis tincidunt urna tempor. Donec dignissim augue id lacus mollis, eget condimentum mi semper.</p>
+                    <p className='font-Playfair mb-4 mt-4 text-2xl'>$80</p>
+                </div>
+            </div>
+            <div className='flex flex-col justify-center w-full h-full'>
+                <div className=' text-black m-8 text-center h-full'>
+                    <p className='font-Playfair mb-4 mt-4 text-4xl'>Value Package</p>
+                    <p className='font-Playfair mb-4 mt-4 text-2xl'>10 retouched photos, 2 outfits</p>
+                    <p className='font-Playfair mb-4 mt-4 text-2xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper arcu mi, vitae luctus nisl porttitor at. Sed fringilla leo id pharetra malesuada. In varius, ex et volutpat euismod, nisi turpis porttitor magna, sed condimentum lorem justo nec nisi. Sed lobortis augue et pretium efficitur. Etiam ac magna vel elit lobortis faucibus. Nunc vestibulum neque at augue bibendum, quis tincidunt urna tempor. Donec dignissim augue id lacus mollis, eget condimentum mi semper.</p>
+                    <p className='font-Playfair mb-4 mt-4 text-2xl'>$180</p>
+                </div>
+            </div>
+            <div className='flex flex-col justify-center w-full h-full'>
+                <div className='text-black m-8 text-center h-full'>
+                    <p className='font-Playfair mb-4 mt-4 text-4xl'>Model Package</p>
+                    <p className='font-Playfair mb-4 mt-4 text-2xl'>16 retouched photos, 3 outfits, 2 locations</p>
+                    <p className='font-Playfair mb-4 mt-4 text-2xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper arcu mi, vitae luctus nisl porttitor at. Sed fringilla leo id pharetra malesuada. In varius, ex et volutpat euismod, nisi turpis porttitor magna, sed condimentum lorem justo nec nisi. Sed lobortis augue et pretium efficitur. Etiam ac magna vel elit lobortis faucibus. Nunc vestibulum neque at augue bibendum, quis tincidunt urna tempor. Donec dignissim augue id lacus mollis, eget condimentum mi semper.</p>
+                    <p className='font-Playfair mb-4 mt-4 text-2xl'>$300</p>
+                </div>
+            </div>
+        </div>
+        <div className='flex justify-center items-center'>
+            <button onClick={handleClick} className='text-white bg-black m-2 mt-1 p-2 w-28 rounded-md transition-colors hover:bg-slate-800'>Book</button>
         </div>
     </div>
-    <div className='flex flex-row justify-end w-full h-144'>
-        <div className='bg-black text-white w-5/12 m-8 text-center'>
-            <p className='font-Playfair mb-4 mt-4 text-5xl'>Value Package</p>
-            <p className='font-Playfair mb-4 mt-4 text-3xl'>10 retouched photos, 2 outfits</p>
-            <p className='font-Playfair mb-4 mt-4 text-3xl'>$180</p>
-            <button onClick={handleClick} className='bg-white text-black m-2 mt-1 p-2 w-28 rounded-md'>Book</button>
-        </div>
-    </div>
-    <div className='flex flex-row content-start w-full h-144'>
-        <div className='bg-black text-white w-5/12 m-8 text-center'>
-            <p className='font-Playfair mb-4 mt-4 text-5xl'>Model Package</p>
-            <p className='font-Playfair mb-4 mt-4 text-3xl'>16 retouched photos, 3 outfits, 2 locations</p>
-            <p className='font-Playfair mb-4 mt-4 text-3xl'>$300</p>
-            <button onClick={handleClick} className='bg-white text-black m-2 mt-1 p-2 w-28 rounded-md'>Book</button>
-        </div>
-    </div>
-</div>
-</div> 
     
   )
 }

@@ -1,20 +1,22 @@
 import Header from './Header'
-import placeholder from '../assets/placeholder.mp4'
+import logo from '../assets/BryxePhotoTransparent.png';
 import {
     BrowserRouter as Router,
     Switch,
+    Link,
     Route,
   } from "react-router-dom";
 
 const Home = () => {
     return (
         <div>
-            <div className='h-screen overflow-hidden flex place-items-start justify-center text-white'>
-            <Header textColor="white" />
-                <video autoPlay loop muted className='z-10 absolute object-fill h-screen w-auto min-w-full max-w-none m-0 p-0 brightness-50'>
-                    <source src={placeholder} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+            <div className='h-screen overflow-hidden flex items-center justify-center text-white bg-home-bg bg-no-repeat bg-cover bg-center'>
+            <div className='flex justify-start items-center flex-col'>
+                <img src={logo} className=" object-scale-down w-48 h-48 m-0 p-0"></img>
+                <Link className ="m-4 font-Playfair" to="/portfolio">
+                    <button className='text-white bg-gray-700 m-2 mt-1 p-2 w-28 rounded-md'>Enter Site</button>
+                </Link>
+            </div>
             </div>
         </div>
     )
